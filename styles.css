@@ -13,9 +13,21 @@ color: C9E265; bright green */
 
 .logo {
     border-radius: 50%;
+    /* background-image: url("./assets/logo.png");  */
+}
 
+#video {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #link-purpose {
     background-image: url("./assets/purpose.png");
 }
+
+#toggler-icon {
+    height: 80px;
+    width: 80px;
+}
+
