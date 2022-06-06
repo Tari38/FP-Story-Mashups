@@ -14,20 +14,20 @@ color: C9E265; bright green */
 
 .navbar {
     background-color: #E83434;
-    height: fit-content;
+    max-height: 120px;
     width: 100%;
     transition: .5s ease-in-out;
 }
 
 .logo-container {
-    position: relative;
+    position: sticky;
     display: flex;
     flex-direction: row;
+    margin-right: 30px;
     border-radius: 50%;
     height: 110px;
-    width: 110px;
-    background-color: #FEEF68;
-    
+    width: 120px;
+    background-color: #FEEF68;   
     transition: .5s ease-in-out;
 }
 
@@ -43,6 +43,7 @@ color: C9E265; bright green */
 .navbar-nav {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
     margin: auto;
 }
 
@@ -62,7 +63,17 @@ color: C9E265; bright green */
     margin: 20px 30px 0 0;
 }
 
+.nav-text {
+    font-family: 'Finger Paint', cursive;
+    font-size: 2rem;
+    color: #FEEF68;
+    text-shadow: 2px 4px #0E2B95;
+}
+
 .toggler-icon {
+    position: absolute;
+    top: 35px;
+    right: 35px;
     height: 80px;
     width: 80px;
     visibility: hidden;
@@ -86,7 +97,7 @@ color: C9E265; bright green */
     padding: 30px;
     height: 100vh;
     border: 8px solid #38B6FF;
-    width: auto;
+    max-width: 100%;
 }
 
 .font, .font-col2 {
@@ -101,11 +112,15 @@ color: C9E265; bright green */
 }
 
 .col1 {
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
 }
 
 .col2 {
-    width: 2000px;
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
     margin-left: 80px;
 }
 
@@ -131,7 +146,11 @@ textarea {
     float: right;
 }
 
-
+@media all and (max-width: 1313px) {
+    .nav-text {
+        visibility: hidden;
+    }
+}
 @media all and (max-width: 1100px) {
     .toggler-icon {
         visibility: visible;
@@ -140,8 +159,8 @@ textarea {
     }
     .navbar {
         transition: .5s ease-in-out;
-        border: none;
     }
+
     .logo-container {
         margin: auto;
         display: flex;
@@ -149,4 +168,38 @@ textarea {
         transform: translate(50%);
         transition: .5s ease-in-out;
     }
+
+    .nav-text {
+        visibility: hidden;
+    }
+    
+    .navbar-nav {
+        transition: .5s ease-in;
+    }
+}
+
+/* @media all and (max-width: 680px) {
+    .container-right {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+.submitted-post {
+    height: 100px;
+    max-width: 600px;
+    border: 8px solid #C9E265;
+    border-radius: 20px 20px 0 20px;
+}
+
+#reply-to-post {
+    position: relative;
+    width: auto;
+    font-family: 'Finger Paint', cursive;
+    background-color: #38B6FF;
+    color: #fff;
+    border: 8px solid #C9E265;
+    border-radius: 0 0 20px 0;
+    margin-left: 65%;
+    text-shadow: 2px 4px #0E2B95;
 }
