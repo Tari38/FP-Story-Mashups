@@ -6,28 +6,147 @@ color: FEEF68; bright yellow
 color: 38B6FF; bright blue
 color: C9E265; bright green */
 
+.main {
+    display: flex;
+    /* flex-direction: column; */
+    background-color: #C9E265;
+}
+
 .navbar {
     background-color: #E83434;
     height: fit-content;
+    width: 100%;
+    transition: .5s ease-in-out;
 }
 
-.logo {
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     border-radius: 50%;
-    /* background-image: url("./assets/logo.png");  */
+    height: 110px;
+    width: 110px;
+    background-color: #FEEF68;
+    
+    transition: .5s ease-in-out;
 }
 
 #video {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 5px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 
-#link-purpose {
-    background-image: url("./assets/purpose.png");
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
-#toggler-icon {
+.nav-item {
+    cursor: pointer;
+}
+
+#link-purpose {
+    margin: 10px 30px 0 0;
+}
+
+#link-stories {
+    margin: 50px 30px 0 0;
+}
+
+#link-terms {
+    margin: 20px 30px 0 0;
+}
+
+.toggler-icon {
     height: 80px;
     width: 80px;
+    visibility: hidden;
+    border: none;
 }
 
+.container-left {
+    display: flex;
+    flex-direction: column;
+    background-color: #38B6FF;
+    padding: 30px;
+    height: 100vh;
+    border: 8px solid #E83434;
+    width: fit-content;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEEF68;
+    padding: 30px;
+    height: 100vh;
+    border: 8px solid #38B6FF;
+    width: auto;
+}
+
+.font, .font-col2 {
+    font-family: 'Finger Paint', cursive;
+    color: #fff;
+    text-shadow: 2px 4px #0E2B95;
+    text-align: center;
+}
+
+.font-col2 {
+    color: #38B6FF;
+}
+
+.col1 {
+    max-width: 600px;
+}
+
+.col2 {
+    width: 2000px;
+    margin-left: 80px;
+}
+
+textarea {
+    margin-top: 20px;
+    background-image: url("./assets/pencil_bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 590px;
+    height: 500px;
+    border: 6px solid #E83434;
+    border-radius: 40px;
+    font-family: 'Finger Paint', cursive;
+    font-size: 2rem;
+    text-align: left;
+    box-shadow: 4px 8px #0E2B95;
+    color: #0E2B95;
+}
+
+#add-post {
+    margin-top: 10%;
+    float: right;
+}
+
+
+@media all and (max-width: 1100px) {
+    .toggler-icon {
+        visibility: visible;
+        transition: .5s ease-in-out;
+        border: none;
+    }
+    .navbar {
+        transition: .5s ease-in-out;
+        border: none;
+    }
+    .logo-container {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        transform: translate(50%);
+        transition: .5s ease-in-out;
+    }
+}
