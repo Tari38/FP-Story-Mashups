@@ -1,87 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-        </style>
-    <link rel="stylesheet" href="/styles.css">
+      @import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
+    </style>
+    <link rel="stylesheet" href="/styles.css" />
     <!-- JS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script defer src="/js/index.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/api.js"></script>
     <title>Story Mashups - Created by Kids</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="logo-container" href="/">
-                    <video id="video" autoplay>
-                        <source src="./assets/Stories-Mashup.mp4" type="video/mp4">
-                    </video>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon">
-                        <img id="toggler-icon" src="./assets/burger menu.png" alt="menu"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <a class="nav-item" href="./purpose.html">
-                        <img id="link-purpose" src="./assets/purpose.png">
-                      </a>
-                      <a class="nav-item" href="./stories.html">
-                        <img id="link-stories" src="./assets/stories.png">
-                      </a>
-                      <a class="nav-item" href="./terms_of_use.html">
-                        <img id="link-terms" src="./assets/terms_of_use.png">
-                      </a>
-                    </ul>
-                </div>
-                <div class="nav-text">Story Mashups - Created by Kids</div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="logo-container" href="/">
+            <video id="video" autoplay>
+              <source src="./assets/Stories-Mashup.mp4" type="video/mp4" />
+            </video>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon">
+              <img id="toggler-icon" src="./assets/burger menu.png" alt="menu"
+            /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a class="nav-item" href="./purpose.html">
+                <img id="link-purpose" src="./assets/purpose.png" />
+              </a>
+              <a class="nav-item" href="./stories.html">
+                <img id="link-stories" src="./assets/stories.png" />
+              </a>
+              <a class="nav-item" href="./terms_of_use.html">
+                <img id="link-terms" src="./assets/terms_of_use.png" />
+              </a>
+            </ul>
+          </div>
+          <div class="nav-text">Story Mashups - Created by Kids</div>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="col1">
-            <div class="container-left">
-                <h3 class="font">Add your sentence to the story ...</h3>
-                <form id="post-input-container">
-                    <textarea for="add-post-button"  class="shadow" >
-                    </textarea> 
-                
-                    <div id="add-post" role="button" type="submit" name="add-post-button">
-                        <img src="./assets/add_to_story.png" alt="add button">
-                    </div>
-                </form>
-            </div>
-        </section>
+      <section class="col1">
+        <div class="container-left">
+          <h3 class="font">Add your sentence to the story ...</h3>
+          <form id="post-input-container">
+            <textarea for="add-post-button" class="shadow" id="textarea">
+            </textarea>
 
-        <section class="col2">
-            <div class="container-right">
-                <h3 class="font-col2">The story so far ...</h3>
+            <div
+              id="add-post"
+              role="button"
+              type="submit"
+              name="add-post-button"
+            >
+              <img src="./assets/add_to_story.png" alt="add button" />
             </div>
-        </section>
-        <br>
-        <section>
-            <form id="form">
-                <input type="text">
-                <input id="getPost" type="submit" value="get post">
-                    <h1 id="message">hello world</h1>
-                    <h1 id="nextMessage">hello world</h1>
-            </form>
-        </section>
+          </form>
+        </div>
+      </section>
+
+      <section class="col2">
+        <div class="container-right">
+          <h3 class="font-col2">The story so far ...</h3>
+        </div>
+      </section>
+      <br />
+      <section>
+        <form id="form">
+          <input type="text" />
+          <input id="getPost" type="submit" value="get post" />
+          <h1 id="message">hello world</h1>
+          <h1 id="nextMessage">hello world</h1>
+        </form>
+      </section>
+
+      <form id="inputText">
+        <input type="text" name="enter text" id="usertext" />
+        <input type="submit" id="submitText" />
+      </form>
     </main>
 
     <footer></footer>
-    
-</body>
+  </body>
 </html>
