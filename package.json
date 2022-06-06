@@ -4,11 +4,15 @@
   "description": "front end for story mashups",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --watchAll --silent"
   },
   "author": "Sam & Daks",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^28.1.0"
+  "devDependencies": {
+    "coverage": "^0.4.1",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16"
   }
 }
