@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+/* font-family: “Finger Paint”, cursive;
+color: E83434; bright red
+color: FEEF68; bright yellow
+color: 38B6FF; bright blue
+color: C9E265; bright green */
+
+.navbar {
+    background-color: #E83434;
+    height: fit-content;
+}
+
+.logo {
+    border-radius: 50%;
+
+}
+
+#link-purpose {
+    background-image: url("./assets/purpose.png");
+}
