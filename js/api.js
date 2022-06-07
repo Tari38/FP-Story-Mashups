@@ -82,14 +82,30 @@ function sendPost(e) {
     const test = fetch(`https://lap1-project-backend.herokuapp.com/`, optionsGet)
     .then(resp => resp.json())
     .then(data => {
-        let newUl = document.createElement('ul')
-        data.forEach((datazz) => {
-            let li = document.createElement('li')
-            li.textContent = datazz.text
-            newUl.appendChild(li)
-        });
-        const app = document.querySelector('#submitted-post')
-        app.appendChild(newUl)
+        const container = document.getElementById('submitted-post');
+        //const valueCards = data;
+       
+        
+        const returnCards = (data) => {
+            return "<div class=\"products-cards\">" + data.map(valueCards => `
+            <div>
+                <div class="product-header">
+                <p>${valueCards.text}</p>
+                <button id="reply-to-post" class="btn shadow">Reply ...</button>
+                </div>`).join('') + "</div>";
+        }
+        container.innerHTML = returnCards(data)
+
+
+
+        // let newUl = document.createElement('ul')
+        // data.forEach((datazz) => {
+        //     let li = document.createElement('li')
+        //     li.textContent = datazz.text
+        //     newUl.appendChild(li)
+        // });
+        // const app = document.querySelector('#submitted-post')
+        // app.appendChild(newUl)
     })
         //let results;
         // const pTag = document.createElement("p");
