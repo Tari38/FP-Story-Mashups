@@ -6,6 +6,9 @@ color: FEEF68; bright yellow
 color: 38B6FF; bright blue
 color: C9E265; bright green */
 
+
+/* main layout structure */
+
 .main {
     display: flex;
     flex-direction: row;
@@ -14,87 +17,6 @@ color: C9E265; bright green */
     margin: auto;
     padding: 10px;
     transition: 2s ease-in-out;
-}
-
-.navbar {
-    background-color: #E83434;
-    height: 130px;
-    width: 100%;
-    transition: 2s slide ease-in-out;
-}
-
-.logo-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 10px 10px;
-    border-radius: 50%;
-    height: 110px;
-    width: 110px;
-    background-color: #FEEF68;   
-}
-
-#video {
-    position: relative;
-    margin-top: 5px;
-    margin-left: 5px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    margin: auto;
-    visibility: visible;
-    transition: 1s ease-in-out;
-}
-
-.nav-item {
-    cursor: pointer;
-    padding: 5px 0;
-    visibility: visible;
-    transition: 2s ease-in-out;
-}
-
-#link-purpose {
-    margin: 10px 30px 0 0;
-    visibility: visible;
-    transition: 2s ease-in-out;
-    
-}
-
-#link-stories {
-    margin: 50px 30px 0 0;
-    transition: 2s ease-in-out;
-    visibility: visible;
-}
-
-#link-terms {
-    margin: 20px 30px 0 0;
-    transition: 2s ease-in-out;
-    visibility: visible;
-}
-
-.nav-text {
-    font-family: 'Finger Paint', cursive;
-    font-size: 2rem;
-    color: #FEEF68;
-    text-shadow: 2px 4px #0E2B95;
-    visibility: visible;
-}
-
-.toggler-icon {
-    position: absolute;
-    top: 35px;
-    right: 10px;
-    height: 80px;
-    width: 80px;
-    visibility: hidden;
-    transition: 2s ease-in-out;
-    border: none;
 }
 
 .container-left {
@@ -145,7 +67,10 @@ color: C9E265; bright green */
     transition: 1s ease-in-out;
 }
 
-textarea{
+
+/* input areas */
+
+textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,114 +91,34 @@ textarea{
     margin: 20px auto 0;
 }
 
-
-#add-post {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    position: relative;
-    transform: scale(1);
-    padding-right: 30px;
-    transition: 1s ease;
-}
-
-#add-gif {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    font-family: 'Finger Paint', cursive;
-    background-color: #C9E265;
-    color: #fff;
-    border: 6px solid #E83434;
-    border-radius: 0 0 20px 20px;
-    margin: auto;
-    text-shadow: 2px 4px #0E2B95;
-    text-align: center;
+.submitted-post {
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    border: 8px solid #C9E265;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
     transition: 1s ease-in-out;
 }
-/* #emoji-btn {
-    border: 6px solid #C9E265;
-} */
 
-.btn-group {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color: #38B6FF;
-    border: 6px solid #C9E265;
-    border-radius: 0 0 40px 40px;
-    width: fit-content;
-    height: 80px;
-    margin-left: 0;
-}
 
-.reply-btn {
-    position: relative;
-    background-color: #38B6FF;
-    border: 6px solid #C9E265;
-    margin-top: -6px;
-    height: 80px;
-    border-radius: 0 0 40px 0;
-    font-family: 'Finger Paint', cursive;
-    color: #fff;
-    width: fit-content;
-    transition: 1s ease-in-out;
-}
+
 
 /* RESPONSIVE MEDIA */
 
 @media only screen and (max-width: 1313px) {
-    .nav-text {
-        visibility: hidden;
-    }
     textarea {
         margin-top: 20px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .toggler-icon {
-        visibility: hidden;
-        transition: 1s ease-in-out;
-        border: none;
-    }
-
-    .navbar {
-        transition: 1s ease-in-out;
-    }
-
-    .logo-container {
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        transition: 1s ease-in-out;
-    }
-
-    .nav-text {
-        visibility: hidden;
-    }
-    
-    .navbar-nav {
-        transition: 1s ease-in-out;
-    }
     textarea {
         margin-top: 20px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .toggler-icon {
-        visibility: visible;
-        transition: 1s ease-in-out;
-    }
-    .toggler-icon-border::after {
-        visibility: hidden;
-        transition: 1s ease-in-out;
-    }
-    .nav-text {
-        visibility: hidden;
-    }
     textarea {
         margin-top: 20px;
     }
@@ -285,9 +130,6 @@ textarea{
         width: 100%;
         margin-left: auto;
         transition: 1s ease-in-out;
-    }
-    .nav-text {
-        visibility: hidden;
     }
     textarea {
         margin-top: 20px;
@@ -309,27 +151,10 @@ textarea{
         margin-top: 20px;
         transition: 1s ease-in-out;
     }
-    .nav-text {
-        visibility: hidden;
-    }
     textarea {
         margin-top: 20px;
     }
 }
-
-.submitted-post {
-    margin-top: 20px;
-    height: 200px;
-    width: auto;
-    border: 8px solid #C9E265;
-    border-radius: 20px 20px 0 0;
-    background-color: #fff;
-    transition: 1s ease-in-out;
-}
-
-
-
-
 
 footer {
     background-color: #E83434;
