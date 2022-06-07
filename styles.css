@@ -8,7 +8,7 @@ color: C9E265; bright green */
 
 .main {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     background-color: #C9E265;
 }
 
@@ -87,7 +87,6 @@ color: C9E265; bright green */
     padding: 30px;
     height: 100vh;
     border: 8px solid #E83434;
-    width: fit-content;
 }
 
 .container-right {
@@ -97,7 +96,6 @@ color: C9E265; bright green */
     padding: 30px;
     height: 100vh;
     border: 8px solid #38B6FF;
-    max-width: 100%;
 }
 
 .font, .font-col2 {
@@ -114,13 +112,11 @@ color: C9E265; bright green */
 .col1 {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
 }
 
 .col2 {
     display: flex;
     flex-direction: column;
-    max-width: auto;
     margin-left: 80px;
 }
 
@@ -143,15 +139,18 @@ textarea {
 
 #add-post {
     margin-top: 10%;
-    float: right;
+    position: relative;
 }
 
-@media all and (max-width: 1313px) {
+@media only screen and (max-width: 1313px) {
     .nav-text {
         visibility: hidden;
     }
+    .col1 .col2 {
+        width: 50%;
+    }
 }
-@media all and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
     .toggler-icon {
         visibility: visible;
         transition: .5s ease-in-out;
@@ -178,12 +177,15 @@ textarea {
     }
 }
 
-/* @media all and (max-width: 680px) {
-    .container-right {
-        display: flex;
+@media only screen and (max-width: 768px) {
+    .main {
         flex-direction: column;
+        margin: auto;
     }
-} */
+    .col1 .col2 {
+        width: 100%;
+    }
+}
 
 .submitted-post {
     height: 100px;
@@ -192,7 +194,7 @@ textarea {
     border-radius: 20px 20px 0 20px;
 }
 
-#reply-to-post {
+#reply-to-post, #add-gif {
     position: relative;
     width: auto;
     font-family: 'Finger Paint', cursive;
@@ -202,4 +204,16 @@ textarea {
     border-radius: 0 0 20px 0;
     margin-left: 65%;
     text-shadow: 2px 4px #0E2B95;
+}
+
+#add-gif {
+    margin-left: 82%;
+}
+
+footer {
+    background-color: #E83434;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    padding: 10px 0;
 }
