@@ -9,11 +9,15 @@ color: C9E265; bright green */
 
 /* main layout structure */
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 .main {
     display: flex;
     flex-direction: row;
     background-color: #C9E265;
-    min-width: 500px;
     margin: auto;
     padding: 10px;
     transition: 2s ease-in-out;
@@ -67,21 +71,21 @@ color: C9E265; bright green */
     transition: 1s ease-in-out;
 }
 
-
-/* input areas */
+/*  ---- input areas ---- */
 
 textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-image: url("./assets/pencil_bg.webp");
-    background-size: contain;
+    background-size:cover;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-position: center;
-    width: fit-content;
+    width: 100%;
     height: 300px;
     border: 6px solid #E83434;
-    border-radius: 40px 40px 40px 0;
+    border-radius: 40px 40px 0px 0;
     font-family: 'Finger Paint', cursive;
     font-size: 2rem;
     text-align: left;
@@ -89,6 +93,13 @@ textarea {
     color: #0E2B95;
     transition: 1s ease-in-out;
     margin: 20px auto 0;
+    text-align: left;
+
+}
+
+.text-area-btns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .submitted-post {
@@ -101,10 +112,40 @@ textarea {
     transition: 1s ease-in-out;
 }
 
+/* ---- character counter ---- */
+
+#char-count {
+    display: inline-block;
+    margin: 0;
+    text-shadow: 2px 2px #0E2B95;
+    font-size: 1.6rem;
+}
+
+.word-counter p {
+    margin: 0;
+}
+
+.word-counter {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 180px;
+    font-family: 'Finger Paint', cursive;
+    background-color: #C9E265;
+    color: #fff;
+    border: 6px solid #E83434;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0.5rem;
+    padding: 0;
+    text-shadow: 2px 2px #0E2B95;
+    text-align: left;
+    transition: 1s ease-in-out;
+}
 
 
 
-/* RESPONSIVE MEDIA */
+/* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
     textarea {
@@ -119,28 +160,42 @@ textarea {
 }
 
 @media only screen and (max-width: 991px) {
+
+    /* ---- burger menu styling ---- */
+
+    .offcanvas-body {
+        background: #FEEF68;
+    }
+
+    .offcanvas-header {
+        background-color: #E83434;
+    }
+
     textarea {
         margin-top: 20px;
     }
-}
 
-@media only screen and (max-width: 970px) {
     .col1, .col2 {
         flex-direction: column;
         width: 100%;
         margin-left: auto;
         transition: 1s ease-in-out;
     }
-    textarea {
-        margin-top: 20px;
-    }
-}
-@media only screen and (max-width: 770px) {
     .main {
         flex-direction: column;
         margin: auto;
         transition: 1s ease-in-out;
     }
+}
+
+@media only screen and (max-width: 970px) {
+
+    textarea {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 770px) {
+
     .col1 .col2 {
         width: 100%;
         margin: auto;
@@ -166,9 +221,9 @@ footer {
 }
 
 
-/* emojis */
+/* ---- emojis ---- */
 
-.react {
+.react {                    /* class selector for the emoji reactions */
     display: inline-flex;
     cursor: pointer;
     width: 70px;
