@@ -18,6 +18,8 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "@joeattardi/emoji-button": "^4.6.4"
+    "@joeattardi/emoji-button": "^4.6.4",
+    "browserify": "^17.0.0",
+    "dotenv": "^16.0.1"
   }
 }

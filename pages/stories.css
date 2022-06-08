@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+/* font-family: “Finger Paint”, cursive;
+color: E83434; bright red
+color: FEEF68; bright yellow
+color: 38B6FF; bright blue
+color: C9E265; bright green */
+
+
+/* main layout structure */
+
+.main {
+    font-family: “Finger Paint”, cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #C9E265;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    transition: 2s ease-in-out;
+}
+
+section {
+    padding: 30px;
+    font-family: 'Finger Paint', cursive;
+    color: #fff;
+    text-shadow: 2px 4px #0E2B95;
+    text-align: center;
+    transition: 1s ease-in-out; 
+}
+
+.daily-post {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 10px;
+    max-height: max-content;
+    max-width: max-content;
+    background-color: #FEEF68;
+    border: 8px dashed #38B6FF;
+    border-radius: 40px;
+}
+
+#story-title {
+    margin: auto;
+    border: none;
+}
+
+#post-body-combined {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
