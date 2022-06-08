@@ -1,0 +1,50 @@
+#add-post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    position: relative;
+    transform: scale(1);
+    padding-right: 30px;
+    transition: 1s ease;
+}
+
+#add-gif {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-family: 'Finger Paint', cursive;
+    background-color: #C9E265;
+    color: #fff;
+    border: 6px solid #E83434;
+    border-radius: 0 0 20px 20px;
+    margin: auto;
+    text-shadow: 2px 4px #0E2B95;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.btn-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #38B6FF;
+    border: 6px solid #C9E265;
+    border-radius: 0 0 40px 40px;
+    width: fit-content;
+    height: 80px;
+    margin-left: 0;
+}
+
+.reply-btn {
+    position: relative;
+    background-color: #38B6FF;
+    border: 6px solid #C9E265;
+    margin-top: -6px;
+    height: 80px;
+    border-radius: 0 0 40px 0;
+    font-family: 'Finger Paint', cursive;
+    color: #fff;
+    width: fit-content;
+    transition: 1s ease-in-out;
+}
