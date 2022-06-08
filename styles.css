@@ -67,8 +67,17 @@ color: C9E265; bright green */
     transition: 1s ease-in-out;
 }
 
+/* ---- Nav bar styling and fixes ---- */
 
-/* input areas */
+.navbar-toggler {
+    border: none;
+}
+
+span.navbar-toggler:active {
+    border: none;
+}
+
+/*  ---- input areas ---- */
 
 textarea {
     display: flex;
@@ -89,6 +98,8 @@ textarea {
     color: #0E2B95;
     transition: 1s ease-in-out;
     margin: 20px auto 0;
+    text-align: left;
+    
 }
 
 .submitted-post {
@@ -104,7 +115,7 @@ textarea {
 
 
 
-/* RESPONSIVE MEDIA */
+/* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
     textarea {
@@ -166,9 +177,9 @@ footer {
 }
 
 
-/* emojis */
+/* ---- emojis ---- */
 
-.react {
+.react {                    /* class selector for the emoji reactions */
     display: inline-flex;
     cursor: pointer;
     width: 70px;
