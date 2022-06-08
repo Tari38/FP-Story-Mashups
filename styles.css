@@ -73,7 +73,7 @@ html {
 
 /*  ---- input areas ---- */
 
-textarea {
+#textInput {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,6 +100,15 @@ textarea {
 .text-area-btns {
     display: flex;
     justify-content: space-between;
+}
+
+
+#gifSearch, .searchGif {
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    border: 6px solid #E83434;
 }
 
 .submitted-post {
@@ -146,13 +155,13 @@ textarea {
 /* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
-    textarea {
+    #textInput {
         margin-top: 20px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    textarea {
+    #textInput {
         margin-top: 20px;
     }
 }
@@ -169,7 +178,7 @@ textarea {
         background-color: #E83434;
     }
 
-    textarea {
+    #textInput {
         margin-top: 20px;
     }
 
@@ -188,7 +197,7 @@ textarea {
 
 @media only screen and (max-width: 970px) {
 
-    textarea {
+    #textInput {
         margin-top: 20px;
     }
 }
@@ -204,7 +213,7 @@ textarea {
         margin-top: 20px;
         transition: 1s ease-in-out;
     }
-    textarea {
+    #textInput {
         margin-top: 20px;
     }
 }
@@ -317,5 +326,5 @@ footer {
   input {
     position:absolute;
     visibility:hidden;
-    clip-path:inset(50%)
+    /* clip-path:inset(50%) */
   }
