@@ -10,40 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/buttons.css">
     <!-- JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/bundle.js"></script>
     <title>Terms of Use</title>
     
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="logo" href="/">
-                    <img src="./assets/logo.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <a class="nav-item" href="./purpose.html">
-                        <img id="link-purpose" src="./assets/purpose.png">
-                      </a>
-                      <a class="nav-item" href="./stories.html">
-                        <img id="link-stories" src="./assets/stories.png">
-                      </a>
-                      <a class="nav-item" href="./terms_of_use.html">
-                        <img id="link-terms" src="./assets/terms_of_use.png">
-                      </a>
-                    </ul>
-                </div>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed shadow">
+        <div class="container-fluid">
+            <a class="logo-container" href="/">
+                <video id="video" autoplay>
+                    <source src="../assets/Stories-Mashup.mp4" type="video/mp4">
+                </video>
+            </a>
+
+            <!-- burger menu toggler -->
+            <div class="toggler-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon">
+                        <img id="toggler-icon" src="../assets/burger menu.png" alt="menu">
+                    </span>
+                </button>
             </div>
-        </nav>
-    </header>
+
+            <!-- offcanvas menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <a class="nav-item" href="../pages/purpose.html">
+                            <img id="link-purpose" src="../assets/purpose.png">
+                        </a>
+                        <a class="nav-item" href="../pages/stories.html">
+                            <img id="link-stories" src="../assets/stories.png">
+                        </a>
+                        <a class="nav-item" href="../pages/terms_of_use.html">
+                            <img id="link-terms" src="../assets/terms_of_use.png">
+                        </a>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+            <div class="nav-text">Story Mashups - Created by Kids</div>
+        </div>
+    </nav>
+</header>
     <main>
-        <p>Terms Of Use page</p>
+        <h1>Terms Of Use page</h1>
+        <p>Sorry, there is nothing here right now ... click <span><a href="/">here</a> </span>to return home.</p>
     </main>
     <footer></footer>
     

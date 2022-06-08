@@ -2,7 +2,7 @@
 
 ## Project description
 
-An app designed for young children to learn to write.
+An app designed for young children to learn to write. Children can write sentences with a maximum character count of 150 characters to a story. After everyone has added their sentences, a teacher or administrator can view the collective story created by the children. 
 
 ## Installation & usage
 
@@ -29,6 +29,8 @@ An app designed for young children to learn to write.
 -   VSCode
 -   HTML, CSS, JS
 -   Bootstrap
+-   Giphy
+-   PicMo (emojis)
 
 ## Process
 
