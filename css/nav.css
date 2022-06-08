@@ -79,6 +79,26 @@
     border: none;
 }
 
+/* ---- Nav bar styling and fixes ---- */
+
+.navbar {
+    min-width: 100vw;
+    margin: 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+span.navbar-toggler:active {
+    border: none;
+}
+
+.offcanvas-title {
+    color: #fff;
+    font-family: 'finger paint';
+}
+
 /* RESPONSIVE MEDIA */
 
 @media only screen and (max-width: 1313px) {

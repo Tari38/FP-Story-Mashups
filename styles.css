@@ -71,28 +71,6 @@ html {
     transition: 1s ease-in-out;
 }
 
-/* ---- Nav bar styling and fixes ---- */
-
-.navbar {
-    min-width: 100vw;
-    margin: 0;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-span.navbar-toggler:active {
-    border: none;
-}
-
-.offcanvas-title {
-    color: #fff;
-    font-family: 'finger paint';
-}
-
-
-
 /*  ---- input areas ---- */
 
 textarea {
@@ -107,7 +85,7 @@ textarea {
     width: 100%;
     height: 300px;
     border: 6px solid #E83434;
-    border-radius: 40px 40px 40px 0;
+    border-radius: 40px 40px 0px 0;
     font-family: 'Finger Paint', cursive;
     font-size: 2rem;
     text-align: left;
@@ -117,6 +95,11 @@ textarea {
     margin: 20px auto 0;
     text-align: left;
 
+}
+
+.text-area-btns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .submitted-post {
@@ -129,6 +112,36 @@ textarea {
     transition: 1s ease-in-out;
 }
 
+/* ---- character counter ---- */
+
+#char-count {
+    display: inline-block;
+    margin: 0;
+    text-shadow: 2px 2px #0E2B95;
+    font-size: 1.6rem;
+}
+
+.word-counter p {
+    margin: 0;
+}
+
+.word-counter {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 180px;
+    font-family: 'Finger Paint', cursive;
+    background-color: #C9E265;
+    color: #fff;
+    border: 6px solid #E83434;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0.5rem;
+    padding: 0;
+    text-shadow: 2px 2px #0E2B95;
+    text-align: left;
+    transition: 1s ease-in-out;
+}
 
 
 
@@ -161,7 +174,7 @@ textarea {
     textarea {
         margin-top: 20px;
     }
-    
+
     .col1, .col2 {
         flex-direction: column;
         width: 100%;

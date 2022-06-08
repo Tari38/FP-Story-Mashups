@@ -31,7 +31,7 @@ section {
     transition: 1s ease-in-out; 
 }
 
-.daily-post {
+/* .daily-post {
     display: flex;
     flex-direction: column;
     margin: 30px auto;
@@ -41,7 +41,7 @@ section {
     background-color: #FEEF68;
     border: 8px dashed #38B6FF;
     border-radius: 40px;
-}
+} */
 
 #story-title {
     margin: auto;
