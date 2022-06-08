@@ -8,7 +8,7 @@ let app;
 describe('app', () => {
     beforeEach(() => {
         document.documentElement.innerHTML = html.toString();
-        app = require('../index.js')
+        app = require('../js/api')
     })
 
     afterEach(() => {
@@ -17,7 +17,7 @@ describe('app', () => {
 
     describe('requests', () => {
         describe('getPosts', () => {
-            test('it makes a get request to /posts', () => {
+            it('makes a get request to /posts', () => {
                 app.getPosts();
                 
                 expect(fetch.mock.calls[0][0]).toBeDefined()

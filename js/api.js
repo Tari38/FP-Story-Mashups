@@ -1,6 +1,10 @@
 //require('dotenv').config();
 
 
+
+const userMessage = document.querySelector('#form');
+const userInput = document.querySelector('#post-input-container');
+
 const userGif = document.querySelector('#add-gif');
 
 const userInput = document.querySelector('#post-input-container');
@@ -92,7 +96,7 @@ function addGif(gif) {
         body: ({
             api_key: process.env.GIPHY_API_KEY,
             random_id: "",
-            ts: integer,
+            ts: int,
             q: "",
             rating: "g",
             limit: 5,

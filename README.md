@@ -29,6 +29,8 @@ An app designed for young children to learn to write. Children can write sentenc
 -   VSCode
 -   HTML, CSS, JS
 -   Bootstrap
+-   Giphy
+-   PicMo (emojis)
 
 ## Process
 
