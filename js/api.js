@@ -1,9 +1,11 @@
 //require('dotenv').config();
 
 
-const userGif = document.querySelector('#add-gif');
 
 const userInput = document.querySelector('#post-input-container');
+
+
+const userGif = document.querySelector('#add-gif');
 
 const optionsGet = {
     method: "GET",
@@ -129,4 +131,6 @@ function addGif(gif) {
 
 //userMessage.addEventListener('click', getPost);
 userInput.addEventListener('onClick', sendPost);
+
 userGif.addEventListener('click', addGif);
+

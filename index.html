@@ -73,19 +73,30 @@
             <div class="container-left">
                 <h3 class="font">Add your sentence to the story ...</h3>
                 <form id="post-input-container">
-                    <textarea for="add-post-button" type="submit" class="shadow" maxlength="150" id="textInput" name="textInput" autofocus required></textarea> 
-                    
-                    <div class="text-area-btns">
-                        <button id="add-gif" class="btn shadow">Add Gif ...</button>
 
-                        <div class="word-counter"><p>Chars left: <span id="char-count">150</span></p></div>
-                    </div>
+                    <div contenteditable="true" for="add-post-button" name="textInput" id="textInput" class="shadow" maxlength="150" autofocus required></div> 
+                    
+
+                     
+
+                    
                     <div id="add-post" role="button" type="submit" name="add-post-button">
                         <button id="testButton">
                         <img src="./assets/add_to_story.png" alt="add button"> 
                         </button>
                     </div>
                 </form>
+                <div class="text-area-btns">
+                    <form id="gifSearch">
+                        <label for="searchGif"></label>
+                        <input class="searchGif" placeholder="anothergif" id="searchGif" type="search" class="btn shadow"  />
+                        <button id="add-gif">Add Gif</button>
+                    </form>
+                    <div class="word-counter">
+                        <p>Chars left: <span id="char-count">150</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -98,8 +109,13 @@
                 <div class="story-posts">
                     
                     <article>
+
+                      
+
+
                         <div class="submitted-post"  id="submitted-post-div">
                             
+
                         </div>
                         <!-- <div class="btn-group shadow" role="group">
                             <input type="checkbox" id="r1" class="btn">
