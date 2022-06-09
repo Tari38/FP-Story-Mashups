@@ -87,6 +87,13 @@
     color: #0E2B95;
 }
 
+#gifSearch {
+    position: absolute;
+    background-color: inherit;
+    border: none;
+    align-self: flex-start;
+}
+
 /* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
@@ -107,6 +114,9 @@
     .add-post-container {
         visibility: visible;
         border: none;
+    }
+    #add-post {
+        transform: scale(0.8)
     }
 }
 
@@ -137,11 +147,21 @@
         margin: auto;
         transition: 1s ease-in-out;
     }
+    #add-post {
+        transform: scale(0.8)
+    }
 }
 
 @media only screen and (max-width: 970px) {
 
     #textInput {
+        margin-top: 20px;
+    }
+    #add-post {
+        transform: scale(0.8)
+    }
+    .text-area-btns {
+        position: relative;
         margin-top: 20px;
     }
 }
