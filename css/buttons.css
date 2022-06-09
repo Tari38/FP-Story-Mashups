@@ -48,3 +48,12 @@
     width: fit-content;
     transition: 1s ease-in-out;
 }
+
+
+
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
