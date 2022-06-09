@@ -44,7 +44,7 @@ html {
     transition: 1s ease-in-out;
 }
 
-.font, .font-col2 {
+.font, .font-col2 .userTextStyle{
     font-family: 'Finger Paint', cursive;
     color: #fff;
     text-shadow: 2px 4px #0E2B95;
@@ -99,8 +99,13 @@ html {
 }
 
 
+
+/* .submitted-post {
+    
+
 .submitted-post {
     overflow: auto;
+
     margin-top: 20px;
     height: 200px;
     width: auto;
@@ -110,7 +115,20 @@ html {
     transition: 1s ease-in-out;
 }
 
+
+.product-header{
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    border: 8px solid #C9E265;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    transition: 1s ease-in-out;
+    }
+    
+
 /* .product-header{} */
+
 
 
 #gifSearch, .searchGif {
@@ -122,12 +140,12 @@ html {
 }
 
 .submitted-post {
-    overflow: hidden;
-
+    padding:1em;
+    overflow: auto;
     margin-top: 20px;
-    height: 200px;
+    height: 550px;
     width: auto;
-    border: 8px solid #C9E265;
+    border: 8px solid #38B6FF;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;

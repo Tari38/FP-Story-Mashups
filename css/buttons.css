@@ -64,6 +64,16 @@
     transition: 1s ease-in-out;
 }
 
+
+
+
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+
 .searchGif {
     visibility: visible;
     position: absolute;
@@ -151,4 +161,5 @@
         margin-top: 20px;
     }
 }
+
 
