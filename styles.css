@@ -105,7 +105,7 @@ html {
 
 
 /* .submitted-post {
-   
+    
     margin-top: 20px;
     height: 200px;
     width: auto;
@@ -116,6 +116,15 @@ html {
 } */
 
 .product-header{
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    border: 8px solid #C9E265;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    transition: 1s ease-in-out;
+    }
+    
 
 
 #gifSearch, .searchGif {
@@ -127,10 +136,9 @@ html {
 }
 
 .submitted-post {
-    overflow: hidden;
-
+    overflow: auto;
     margin-top: 20px;
-    height: 200px;
+    height: 550px;
     width: auto;
     border: 8px solid #C9E265;
     border-radius: 20px 20px 0 0;
