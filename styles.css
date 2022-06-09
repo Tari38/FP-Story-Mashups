@@ -83,29 +83,29 @@ html {
     background-position:bottom;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     border: 6px solid #E83434;
-    border-radius: 40px 40px 0px 0;
+    border-radius: 20px 20px 0px 0;
     font-family: 'Finger Paint', cursive;
     font-size: 2rem;
     text-align: left;
     box-shadow: 4px 8px #0E2B95;
     color: #0E2B95;
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out; */
     margin: 20px auto 0;
     text-align: left;
-
+    padding: 10px;
 }
 
-.text-area-btns {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 /* .submitted-post {
     
+
+.submitted-post {
+    overflow: auto;
+
     margin-top: 20px;
     height: 200px;
     width: auto;
@@ -113,7 +113,8 @@ html {
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
-} */
+}
+
 
 .product-header{
     margin-top: 20px;
@@ -125,6 +126,9 @@ html {
     transition: 1s ease-in-out;
     }
     
+
+/* .product-header{} */
+
 
 
 #gifSearch, .searchGif {
@@ -153,7 +157,7 @@ html {
     display: inline-block;
     margin: 0;
     text-shadow: 2px 2px #0E2B95;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .word-counter p {
@@ -165,14 +169,14 @@ html {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    width: 180px;
+    width: 150px;
+    height: auto;
     font-family: 'Finger Paint', cursive;
     background-color: #C9E265;
     color: #fff;
     border: 6px solid #E83434;
-    border-radius: 0 0 20px 20px;
-    margin-top: 0.5rem;
-    padding: 0;
+    border-radius: 0 0 20px 0px;
+    padding-left: 5px;
     text-shadow: 2px 2px #0E2B95;
     text-align: left;
     transition: 1s ease-in-out;
@@ -254,7 +258,6 @@ footer {
     padding: 10px 0;
     transition: 1s ease-in-out;
 }
-
 
 /* ---- emojis ---- */
 

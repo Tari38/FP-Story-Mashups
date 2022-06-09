@@ -19,7 +19,7 @@ function init() {
             e.preventDefault();
     
         let str = document.getElementById("searchGif").value.trim();
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=FlLcKnBPn6Wpd1tyqGXPsXj8WEbOhCYQ&q=${str}&limit=5&offset=0&rating=g&lang=en`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=FlLcKnBPn6Wpd1tyqGXPsXj8WEbOhCYQ&q=${str}&limit=1&offset=0&rating=g&lang=en`;
         // url = url.concat(str);
         console.log(url);
         fetch(url)
@@ -27,7 +27,7 @@ function init() {
             .then(content => {
                 console.log(content);
                 // data, pagination, meta
-                console.log(content.data.url);
+                // console.log(content.data.url);
                 console.log("META", content.meta);
                 let fig = document.createElement("figure");
                 let img = document.createElement("img");
