@@ -23,6 +23,13 @@ html {
     transition: 2s ease-in-out;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
 .container-left {
     display: flex;
     flex-direction: column;
@@ -44,7 +51,7 @@ html {
     transition: 1s ease-in-out;
 }
 
-.font, .font-col2 .userTextStyle{
+.font, .font-col2 {
     font-family: 'Finger Paint', cursive;
     color: #fff;
     text-shadow: 2px 4px #0E2B95;
@@ -100,22 +107,6 @@ html {
 
 
 
-/* .submitted-post {
-    
-
-.submitted-post {
-    overflow: auto;
-
-    margin-top: 20px;
-    height: 200px;
-    width: auto;
-    border: 8px solid #C9E265;
-    border-radius: 20px 20px 0 0;
-    background-color: #fff;
-    transition: 1s ease-in-out;
-}
-
-
 .product-header{
     margin-top: 20px;
     height: 200px;
@@ -125,32 +116,33 @@ html {
     background-color: #fff;
     transition: 1s ease-in-out;
     }
-    
-
-/* .product-header{} */
-
-
-
-#gifSearch, .searchGif {
-    visibility: visible;
-    position: relative;
-    z-index: 100;
-    background-color: #fff;
-    border: 6px solid #E83434;
-}
 
 .submitted-post {
     padding:1em;
     overflow: auto;
     margin-top: 20px;
     height: 550px;
-    width: auto;
+    width: fit-content;
     border: 8px solid #38B6FF;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
+.submitted-post > img {
+    border: 6px solid red;
+    border-radius: 40%;
+    max-height: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 /* ---- character counter ---- */
 
 #char-count {
@@ -165,7 +157,7 @@ html {
 }
 
 .word-counter {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -178,7 +170,7 @@ html {
     border-radius: 0 0 20px 0px;
     padding-left: 5px;
     text-shadow: 2px 2px #0E2B95;
-    text-align: left;
+    /* text-align: left; */
     transition: 1s ease-in-out;
 }
 

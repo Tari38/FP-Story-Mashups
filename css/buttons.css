@@ -8,6 +8,12 @@
 }
 
 #testButton {
+<<<<<<< HEAD
+=======
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+>>>>>>> 67fbe844cb9e6d7de4668ffceeb92c923628330b
     background-color: inherit;
     border: none;
 }
@@ -38,17 +44,26 @@
     border: 6px solid #C9E265;
     border-radius: 0 0 40px 40px;
     width: fit-content;
-    height: 80px;
+    height: 90px;
     margin-left: 0;
 }
 
 .text-area-btns {
+<<<<<<< HEAD
     position: absolute;
     justify-content: space-between;
     background-color: inherit;
     border: none;
     height: fit-content;
     bottom: -15px;
+=======
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    border: none;
+    /* height: fit-content; */
+>>>>>>> 67fbe844cb9e6d7de4668ffceeb92c923628330b
 }
 
 .reply-btn {
@@ -87,6 +102,16 @@
     color: #0E2B95;
 }
 
+<<<<<<< HEAD
+=======
+#gifSearch {
+    position: absolute;
+    background-color: inherit;
+    border: none;
+    align-self: flex-start;
+}
+
+>>>>>>> 67fbe844cb9e6d7de4668ffceeb92c923628330b
 /* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
@@ -107,6 +132,9 @@
     .add-post-container {
         visibility: visible;
         border: none;
+    }
+    #add-post {
+        transform: scale(0.8)
     }
 }
 
@@ -137,6 +165,9 @@
         margin: auto;
         transition: 1s ease-in-out;
     }
+    #add-post {
+        transform: scale(0.8)
+    }
 }
 
 @media only screen and (max-width: 970px) {
@@ -144,6 +175,16 @@
     #textInput {
         margin-top: 20px;
     }
+<<<<<<< HEAD
+=======
+    #add-post {
+        transform: scale(0.8)
+    }
+    .text-area-btns {
+        position: relative;
+        margin-top: 20px;
+    }
+>>>>>>> 67fbe844cb9e6d7de4668ffceeb92c923628330b
 }
 @media only screen and (max-width: 770px) {
 
@@ -152,6 +193,10 @@
         margin: auto;
     }
     #add-post {
+<<<<<<< HEAD
+=======
+        position: relative;
+>>>>>>> 67fbe844cb9e6d7de4668ffceeb92c923628330b
         display: flex;
         flex-direction: column;
         margin-top: 20px;
