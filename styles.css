@@ -99,8 +99,8 @@ html {
 }
 
 
-/* .submitted-post {
-   
+.submitted-post {
+    overflow: auto;
     margin-top: 20px;
     height: 200px;
     width: auto;
@@ -108,7 +108,7 @@ html {
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
-} */
+}
 
 /* .product-header{} */
 
