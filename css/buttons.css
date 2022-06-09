@@ -8,8 +8,11 @@
 }
 
 #testButton {
+    display: flex;
+    flex-direction: row;
     background-color: inherit;
     border: none;
+    margin: auto;
 }
 
 #add-gif {
@@ -44,11 +47,11 @@
 
 .text-area-btns {
     position: absolute;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
     background-color: inherit;
     border: none;
     height: fit-content;
-    bottom: -15px;
 }
 
 .reply-btn {
@@ -77,6 +80,12 @@
     color: #0E2B95;
 }
 
+#gifSearch {
+    position: relative;
+    background-color: inherit;
+    border: none;
+}
+
 /* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
@@ -87,11 +96,8 @@
 }
 
 @media only screen and (max-width: 1080px) {
-    /* #textInput {
-        margin-top: 20px;
-    } */
     .text-area-btns {
-        position: absolute;
+        position: relative;
         margin-top: 20px;
     }
     .add-post-container {
@@ -112,9 +118,10 @@
         background-color: #E83434;
     }
 
-    /* #textInput {
+    .text-area-btns {
+        position: relative;
         margin-top: 20px;
-    } */
+    }
 
     .col1, .col2 {
         flex-direction: column;
@@ -134,6 +141,10 @@
     #textInput {
         margin-top: 20px;
     }
+    .text-area-btns {
+        position: relative;
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width: 770px) {
 
@@ -142,13 +153,26 @@
         margin: auto;
     }
     #add-post {
+        position: absolute;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        bottom: 20px;
+        left: 0;
+        margin: auto;
+        transform: scale(0.7);
         transition: 1s ease-in-out;
+    }
+    .btn-group {
+        position: relative;
+        margin-top: 0;
+        background-color: inherit;
     }
     #textInput {
         margin-top: 20px;
+    }
+    .text-area-btns {
+        position: relative;
+        background-color: none;
     }
 }
 

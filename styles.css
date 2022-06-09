@@ -21,6 +21,7 @@ html {
     margin: auto;
     padding: 10px;
     transition: 2s ease-in-out;
+    min-width: 400px;
 }
 
 .container-left {
@@ -31,6 +32,7 @@ html {
     height: 100vh;
     border: 8px solid #E83434;
     transition: 2s ease-in-out;
+    min-width: 400px;
 }
 
 
@@ -42,6 +44,7 @@ html {
     height: 100vh;
     border: 8px solid #38B6FF;
     transition: 1s ease-in-out;
+    min-width: 400px;
 }
 
 .font, .font-col2 {
@@ -60,6 +63,7 @@ html {
     display: flex;
     flex-direction: column;
     transition: 1s ease-in-out;
+    min-width: 400px;
 }
 
 .col1 {
@@ -74,13 +78,20 @@ html {
 
 /*  ---- input areas ---- */
 
+#post-input-container {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
 #textInput {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: url("./assets/pencil_bg.webp");
-    background-size:cover;
-    background-position:bottom;
+    background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-position: center;
     min-width: 300px;
@@ -93,7 +104,7 @@ html {
     box-shadow: 4px 8px #0E2B95;
     color: #0E2B95;
     /* transition: 1s ease-in-out; */
-    margin: 20px auto 0;
+    margin: 20px 0;
     text-align: left;
     padding: 10px;
 }
@@ -113,17 +124,16 @@ html {
 /* .product-header{} */
 
 
-#gifSearch, .searchGif {
+/* #gifSearch, .searchGif {
     visibility: visible;
     position: relative;
     z-index: 100;
     background-color: #fff;
     border: 6px solid #E83434;
-}
+} */
 
 .submitted-post {
     overflow: hidden;
-
     margin-top: 20px;
     height: 200px;
     width: auto;
