@@ -48,3 +48,16 @@ function init() {
     });
     };
     document.addEventListener("DOMContentLoaded", init);
+
+    
+    let maxChars = 10;
+    let currentChars = 0;
+    
+    function checkLength(event) {
+      if(currentChars >= maxChars) {
+        alert('reached max chars');
+        event.preventDefault();
+      } else {
+        currentChars++;
+      }
+    }

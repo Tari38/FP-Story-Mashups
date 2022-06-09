@@ -1,10 +1,6 @@
 //require('dotenv').config();
 
-
-
 const userInput = document.querySelector('#post-input-container');
-
-
 const userGif = document.querySelector('#add-gif');
 
 const optionsGet = {
@@ -15,19 +11,28 @@ const optionsGet = {
     }
 }
 
+ 
+   
+///// send userMessage to the server and renders the message on the webpage //////                    
 
 function sendPost(e) {
 
     e.preventDefault();
-    const textMessage = e.target.textInput.value;
+    const textMessage = document.getElementsByClassName("textArea")[0].childNodes[0].textContent
+    // const textMessage = e.target.textInput.value;
     const randomId = Math.floor(Math.random() * 4000);
     console.log(randomId);
 
-    // const randomId = fetch('https://lap1-project-backend.herokuapp.com/' , optionsGet)
-    //                 .then(res=> res.json())
-    //                 .then()
-
-
+    // let randomId;
+    // const idFetch = fetch('https://lap1-project-backend.herokuapp.com/all' , optionsGet)
+    //     .then(res=> res.json())
+    //     .then(data => {
+    //         randomId = data.length + 1
+    //     })
+    //     .catch(err => console.log(err))
+    
+    // console.log(randomId)
+   
     const options = {
         method: "POST",
         headers: {
@@ -41,10 +46,9 @@ function sendPost(e) {
         })
     }
     
-    
     userInput.reset();
     
-    const print = fetch('https://lap1-project-backend.herokuapp.com/', options)
+    const print = fetch('https://lap1-project-backend.herokuapp.com/post', options)
     .then(res => res.json())
     .then(data => {
         renderMsg()
@@ -60,7 +64,7 @@ function sendPost(e) {
 
 function renderMsg(){
 
-const test = fetch(`https://lap1-project-backend.herokuapp.com/`, optionsGet)
+const test = fetch(`https://lap1-project-backend.herokuapp.com/all`, optionsGet)
     .then(resp => resp.json())
     .then(data => {
         const container = document.getElementById('submitted-post-div');
@@ -89,6 +93,8 @@ const test = fetch(`https://lap1-project-backend.herokuapp.com/`, optionsGet)
                             <input id="getPost" type="submit" value="get post">
                                 <label for="reply-to-post" class="react">       
                                     <button type="button" id="reply-to-post" class="reply-btn">Reply ...</button>
+                                    <input class="hide" type="text" id="commentInput" value="..." />
+                                    
                                 </label>   
                         </form>
                 </div>
@@ -97,6 +103,7 @@ const test = fetch(`https://lap1-project-backend.herokuapp.com/`, optionsGet)
             </div>`).join('') + "</div>";
                 
         }
+
         //console.log(returnCards(data))
         container.innerHTML = returnCards(data)
     })
@@ -129,8 +136,27 @@ function addGif(gif) {
         
 
 
+
+
+
+
+
+
+
+
 //userMessage.addEventListener('click', getPost);
-userInput.addEventListener('onClick', sendPost);
+//userInput.addEventListener('onClick', sendPost);
 
 userGif.addEventListener('click', addGif);
 
+
+// function onButtonClick (e) {
+//     e.preventDefault();
+//     console.log("words test")
+//     document.getElementById('reply-to-post').className = "show";
+    
+// }
+
+// const clickComment = document.querySelector("#reply-to-post")
+
+// clickComment.addEventListener("onclick", onButtonClick)
