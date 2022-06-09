@@ -66,6 +66,7 @@ html {
     width: 40%;
 }
 .col2 {
+    overflow: auto;
     margin-left: 20px;
     width: 60%;
     transition: 1s ease-in-out;
@@ -102,8 +103,18 @@ textarea {
     justify-content: space-between;
 }
 
-.submitted-post {
-    overflow: hidden;
+/* .submitted-post {
+   
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    border: 8px solid #C9E265;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    transition: 1s ease-in-out;
+} */
+
+.product-header{
     margin-top: 20px;
     height: 200px;
     width: auto;
@@ -143,6 +154,8 @@ textarea {
     text-align: left;
     transition: 1s ease-in-out;
 }
+
+
 
 /* ---- RESPONSIVE MEDIA ---- */
 
