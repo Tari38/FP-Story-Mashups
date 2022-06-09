@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654616604734" clover="3.2.0">
-  <project timestamp="1654616604735" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1654791281192" clover="3.2.0">
+  <project timestamp="1654791281192" name="All files">
+    <metrics statements="51" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="3" elements="67" coveredelements="13" complexity="0" loc="51" ncloc="51" packages="1" files="2" classes="2"/>
+    <file name="api.js" path="/Users/richardsigl/Desktop/ALL SD Files/all-git-repos/FutureProof Lessons/lap-1/Project Week/Community Blog Project/Client/FP-Story-Mashups/js/api.js">
+      <metrics statements="27" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="3"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="71" count="1" type="stmt"/>
+      <line num="72" count="1" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="76" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="78" count="0" type="stmt"/>
+      <line num="112" count="0" type="stmt"/>
+      <line num="115" count="1" type="stmt"/>
+      <line num="119" count="1" type="stmt"/>
+      <line num="120" count="1" type="stmt"/>
+      <line num="123" count="0" type="stmt"/>
+      <line num="138" count="0" type="stmt"/>
+      <line num="154" count="1" type="stmt"/>
+    </file>
+    <file name="index.js" path="/Users/richardsigl/Desktop/ALL SD Files/all-git-repos/FutureProof Lessons/lap-1/Project Week/Community Blog Project/Client/FP-Story-Mashups/js/index.js">
+      <metrics statements="24" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>

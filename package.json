@@ -1,12 +1,15 @@
 {
   "name": "team_project_one",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "version": "1.0.0",
   "description": "front end for story mashups",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest --watchAll --silent",
+    "test": "jest --watchAll --silent --coverage",
     "coverage": "jest --coverage --silent"
   },
   "author": "Sam & Daks",
@@ -14,8 +17,10 @@
   "devDependencies": {
     "coverage": "^0.4.1",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.1",
     "jest-fetch-mock": "^3.0.3",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "browserify": "^17.0.0",

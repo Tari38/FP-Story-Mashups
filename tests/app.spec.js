@@ -2,26 +2,36 @@ const fs = require('fs');
 const path = require('path');
 const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 
-global.fetch = require('jest-fetch-mock');
-let app;
-
-describe('app', () => {
+describe('index.html', () => {
     beforeEach(() => {
         document.documentElement.innerHTML = html.toString();
-        app = require('../js/api')
+    })
+    describe('head', () => {
+        test('it has a title', (() => {
+            let title = document.querySelector('title');
+            expect(title).toBeTruthy();
+        }))
+        
+        test('it has a link', (() => {
+            let link = document.querySelector('link');
+            expect(link).toBeTruthy();
+        }))
+
+    })
+    
+    describe('main', () => {
+        test('it has a button', (() => {
+            let button = document.querySelector('button');
+            expect(button).toBeTruthy();
+        }))
     })
 
-    afterEach(() => {
-        fetch.resetMocks();
-    })
 
-    describe('requests', () => {
-        describe('getPosts', () => {
-            it('makes a get request to /posts', () => {
-                app.getPosts();
-                
-                expect(fetch.mock.calls[0][0]).toBeDefined()
-            })
-        });
-    })
 })
+
+// const fs = require('fs');
+// const path = require('path');
+// const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
+
+// global.fetch = require('jest-fetch-mock');
+// let app;

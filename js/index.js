@@ -5,7 +5,7 @@
 // const require = require("browserify");
 // require("dotenv").config();
 
-function init() {
+function init(cats) {
 
     const options = {
         method: "GET",
@@ -40,6 +40,7 @@ function init() {
                 fig.appendChild(fc);
                 textInput.insertAdjacentElement("afterbegin", fig);
                 document.querySelector("#searchGif").value = '';
+                return content
 
             })
             .catch(err => {
