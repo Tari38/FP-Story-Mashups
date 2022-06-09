@@ -18,8 +18,11 @@ function sendPost(e) {
   e.preventDefault();
   const textMessage =
     document.getElementsByClassName("textArea")[0].childNodes[0].textContent;
-
-  const giphyImg = document.getElementById("giphyId").src;
+  console.log(document.getElementsByClassName("textArea")[0].childNodes[0]);
+  let giphyImg = "";
+  if (document.getElementById("giphyId") !== null) {
+    giphyImg = document.getElementById("giphyId").src;
+  }
 
   // const textMessage = e.target.textInput.value;
   const randomId = Math.floor(Math.random() * 4000);
