@@ -45,13 +45,18 @@
     margin-left: 0;
 }
 
-.text-area-btns {
+.add-post-container {
     position: absolute;
-    display: flex;
-    flex-direction: row;
+    z-index: 0;
+}
+.text-area-btns {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
     background-color: inherit;
     border: none;
     height: fit-content;
+    z-index: 5;
 }
 
 .reply-btn {

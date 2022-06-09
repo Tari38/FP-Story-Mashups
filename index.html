@@ -80,27 +80,28 @@
                 <form id="post-input-container">
 
                     <div onkeypress="return (this.innerText.length <= 150)" contenteditable="true" for="add-post-button" name="textInput" id="textInput" class="shadow textArea" autofocus required></div> 
-                    <div class="word-counter">
-                        <p>Chars left:
-                            <span id="char-count">150</span>
-                        </p>
-                    </div>
+                    
                                  
                     <div id="add-post" role="button" type="submit" name="add-post-button" class="add-post-container">
                         <button id="testButton">
                             <img src="./assets/add_to_story.png" alt="add sentence to story button"> 
                         </button>
                     </div>
-                </form>
-                <div class="text-area-btns btn-group">
-                    <form id="gifSearch">
-                        <label for="searchGif"></label>
-                            <input class="searchGif" placeholder="search" id="searchGif" type="search" />
-                                <button id="add-gif">Add Gif</button>
-
+                
+                    <div class="text-area-btns btn-group">
+                        <div id="gifSearch">
+                            <label for="searchGif"></label>
+                                <input class="searchGif" placeholder="search" id="searchGif" type="search" />
+                                    <button id="add-gif">Add Gif</button>
+                                    <div class="word-counter">
+                                        <p>Chars left:
+                                            <span id="char-count">150</span>
+                                        </p>
+                                    </div>
                                     
-                    </form>
-                </div>
+                                </div>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>

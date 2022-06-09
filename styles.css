@@ -142,13 +142,13 @@ html {
 
 
 
-#gifSearch, .searchGif {
+/* #gifSearch, .searchGif {
     visibility: visible;
     position: relative;
     z-index: 100;
     background-color: #fff;
     border: 6px solid #E83434;
-}
+} */
 
 .submitted-post {
     padding:1em;
