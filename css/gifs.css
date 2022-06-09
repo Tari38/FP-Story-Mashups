@@ -1,0 +1,5 @@
+figure > img {
+    border: 6px solid red;
+    border-radius: 40%;
+    max-height: 200px;
+}

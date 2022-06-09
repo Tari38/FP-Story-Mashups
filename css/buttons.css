@@ -1,10 +1,9 @@
 #add-post {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
     position: relative;
+    margin-top: 100px;
     transform: scale(1);
-    padding-right: 30px;
     transition: 1s ease;
 }
 
@@ -13,12 +12,14 @@
     display: flex;
     flex-direction: column;
     width: 150px;
+    height: 45px;
     font-family: 'Finger Paint', cursive;
     background-color: #C9E265;
     color: #fff;
     border: 6px solid #E83434;
-    border-radius: 0 0 20px 20px;
-    margin-top: 0.5rem;
+    border-radius: 0 0 0 20px;
+    margin: auto;
+    margin-top: 15px;
     text-shadow: 2px 4px #0E2B95;
     text-align: center;
     transition: 1s ease-in-out;
@@ -36,6 +37,15 @@
     margin-left: 0;
 }
 
+.text-area-btns {
+    position: absolute;
+    justify-content: space-between;
+    background-color: inherit;
+    border: none;
+    height: fit-content;
+    bottom: -15px;
+}
+
 .reply-btn {
     position: relative;
     background-color: #38B6FF;
@@ -48,3 +58,88 @@
     width: fit-content;
     transition: 1s ease-in-out;
 }
+
+.searchGif {
+    visibility: visible;
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    height: 45px;
+    background-color: #fff;
+    border: 6px solid #E83434;
+    text-align: left;
+    font-family: 'Finger Paint', cursive;
+    color: #0E2B95;
+}
+
+/* ---- RESPONSIVE MEDIA ---- */
+
+@media only screen and (max-width: 1313px) {
+    .text-area-btns {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    /* #textInput {
+        margin-top: 20px;
+    } */
+    .text-area-btns {
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    /* ---- burger menu styling ---- */
+
+    .offcanvas-body {
+        background: #FEEF68;
+    }
+
+    .offcanvas-header {
+        background-color: #E83434;
+    }
+
+    /* #textInput {
+        margin-top: 20px;
+    } */
+
+    .col1, .col2 {
+        flex-direction: column;
+        min-width: 400px;
+        margin-left: auto;
+        transition: 1s ease-in-out;
+    }
+    .main {
+        flex-direction: column;
+        margin: auto;
+        transition: 1s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+
+    #textInput {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 770px) {
+
+    .col1 .col2 {
+        width: 100%;
+        margin: auto;
+    }
+    #add-post {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        transition: 1s ease-in-out;
+    }
+    #textInput {
+        margin-top: 20px;
+    }
+}
+
