@@ -21,9 +21,10 @@
     <title>Story Mashups - Created by Kids</title>
     
 </head>
-
+<!-- content start -->
 <body>
-    <header>
+    <header> <!-- header for screen reader accessibility-->
+        <!-- main navigation -->
         <nav class="navbar navbar-expand-lg fixed shadow">
             <div class="container-fluid">
                 <a class="logo-container" href="./index.html">
@@ -72,31 +73,35 @@
     <main class="main">
         <!-- column left -->
         <section class="col col1">
-            <div class="container-left">
+            <div class="container-left flex-container">
             
-                <h3 class="font">Add your sentence to the story ...</h3>
+                <h3 class="font">Add your sentence to the story...</h3>
+                <!-- input sentence -->
                 <form id="post-input-container">
 
-                    <div contenteditable="true" for="add-post-button" name="textInput" id="textInput" class="shadow textArea" maxlength="150" autofocus required></div> 
+                    <div onkeypress="return (this.innerText.length <= 150)" contenteditable="true" for="add-post-button" name="textInput" id="textInput" class="shadow textArea" autofocus required></div> 
                     
-                   
+                                 
                     <div id="add-post" role="button" type="submit" name="add-post-button" class="add-post-container">
                         <button id="testButton">
-                            <img src="./assets/add_to_story.png" alt="add button"> 
+                            <img src="./assets/add_to_story.png" alt="add sentence to story button"> 
                         </button>
                     </div>
-                </form>
-                <div class="text-area-btns btn-group">
-                    <form id="gifSearch">
-                        <label for="searchGif"></label>
-                        <input class="searchGif" placeholder="search" id="searchGif" type="search" />
-                        <button id="add-gif">Add Gif</button>
-                    </form>
-                    <div class="word-counter">
-                        <p>Chars left: <span id="char-count">150</span>
-                        </p>
+                
+                    <div class="text-area-btns btn-group">
+                        <div id="gifSearch">
+                            <label for="searchGif"></label>
+                                <input class="searchGif" placeholder="search" id="searchGif" type="search" />
+                                    <button id="add-gif">Add Gif</button>
+                                    <div class="word-counter">
+                                        <p>Chars left:
+                                            <span id="char-count">150</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
                     </div>
-                </div>
+                </form>
                 </div>
             </div>
         </section>
@@ -109,7 +114,7 @@
                 <!-- current posts of the day -->
                 <div class="story-posts">
                     <article>
-                        <div class="submitted-post"  id="submitted-post-div">
+                        <div class="submitted-post clearfix"  id="submitted-post-div">
                             
 
                         </div>

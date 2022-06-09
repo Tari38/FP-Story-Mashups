@@ -21,6 +21,14 @@ html {
     margin: auto;
     padding: 10px;
     transition: 2s ease-in-out;
+    min-width: 400px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .container-left {
@@ -31,6 +39,7 @@ html {
     height: 100vh;
     border: 8px solid #E83434;
     transition: 2s ease-in-out;
+    min-width: 400px;
 }
 
 
@@ -42,9 +51,10 @@ html {
     height: 100vh;
     border: 8px solid #38B6FF;
     transition: 1s ease-in-out;
+    min-width: 400px;
 }
 
-.font, .font-col2 .userTextStyle{
+.font, .font-col2 {
     font-family: 'Finger Paint', cursive;
     color: #fff;
     text-shadow: 2px 4px #0E2B95;
@@ -60,6 +70,7 @@ html {
     display: flex;
     flex-direction: column;
     transition: 1s ease-in-out;
+    min-width: 400px;
 }
 
 .col1 {
@@ -74,13 +85,20 @@ html {
 
 /*  ---- input areas ---- */
 
+#post-input-container {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
 #textInput {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: url("./assets/pencil_bg.webp");
-    background-size:cover;
-    background-position:bottom;
+    background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-position: center;
     min-width: 300px;
@@ -93,27 +111,11 @@ html {
     box-shadow: 4px 8px #0E2B95;
     color: #0E2B95;
     /* transition: 1s ease-in-out; */
-    margin: 20px auto 0;
+    margin: 20px 0;
     text-align: left;
     padding: 10px;
 }
 
-
-
-/* .submitted-post {
-    
-
-.submitted-post {
-    overflow: auto;
-
-    margin-top: 20px;
-    height: 200px;
-    width: auto;
-    border: 8px solid #C9E265;
-    border-radius: 20px 20px 0 0;
-    background-color: #fff;
-    transition: 1s ease-in-out;
-}
 
 
 .product-header{
@@ -125,32 +127,33 @@ html {
     background-color: #fff;
     transition: 1s ease-in-out;
     }
-    
-
-/* .product-header{} */
-
-
-
-#gifSearch, .searchGif {
-    visibility: visible;
-    position: relative;
-    z-index: 100;
-    background-color: #fff;
-    border: 6px solid #E83434;
-}
 
 .submitted-post {
     padding:1em;
     overflow: auto;
     margin-top: 20px;
     height: 550px;
-    width: auto;
+    width: fit-content;
     border: 8px solid #38B6FF;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
+.submitted-post > img {
+    border: 6px solid red;
+    border-radius: 40%;
+    max-height: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 /* ---- character counter ---- */
 
 #char-count {
@@ -165,7 +168,7 @@ html {
 }
 
 .word-counter {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -178,7 +181,7 @@ html {
     border-radius: 0 0 20px 0px;
     padding-left: 5px;
     text-shadow: 2px 2px #0E2B95;
-    text-align: left;
+    /* text-align: left; */
     transition: 1s ease-in-out;
 }
 

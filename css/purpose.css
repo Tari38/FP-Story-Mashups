@@ -27,7 +27,7 @@ article > h3 {
     transition: 1s ease-in-out; 
 }
 
-article > p, ul, h6 {
+article > p, .list-group, h6 {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -39,7 +39,7 @@ article > p, ul, h6 {
     font-size: larger;
 }
 
-ul, p, h4, h6 {
+.list-group, p, h4, h6 {
     margin: auto;
     text-align: center;
 }
