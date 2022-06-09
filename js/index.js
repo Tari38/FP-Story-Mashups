@@ -27,7 +27,7 @@ function init() {
             .then(content => {
                 console.log(content);
                 // data, pagination, meta
-                console.log(content.data.url);
+                // console.log(content.data.url);
                 console.log("META", content.meta);
                 let fig = document.createElement("figure");
                 let img = document.createElement("img");
