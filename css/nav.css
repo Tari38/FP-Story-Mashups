@@ -1,8 +1,7 @@
 .navbar {
     background-color: #E83434;
     height: 130px;
-    min-width: 400px;
-    max-width: 100%;
+    width: 100%;
     transition: 2s slide ease-in-out;
 }
 

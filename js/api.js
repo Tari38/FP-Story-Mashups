@@ -149,8 +149,8 @@ function addGif(gif) {
   return response.json();
 }
 
-userMessage.addEventListener('click', getPost);
-userInput.addEventListener('click', sendPost);
+//userMessage.addEventListener('click', getPost);
+//userInput.addEventListener('onClick', sendPost);
 
 userGif.addEventListener("click", addGif);
 
