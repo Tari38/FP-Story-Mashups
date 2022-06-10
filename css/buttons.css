@@ -8,12 +8,8 @@
 }
 
 #testButton {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
     background-color: inherit;
     border: none;
-    margin: auto;
 }
 
 #add-gif {
@@ -42,21 +38,17 @@
     border: 6px solid #C9E265;
     border-radius: 0 0 40px 40px;
     width: fit-content;
-    height: 90px;
+    height: 80px;
     margin-left: 0;
 }
 
-.add-post-container {
-    position: absolute;
-    z-index: 0;
-}
 .text-area-btns {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
     background-color: inherit;
     border: none;
-    /* height: fit-content; */
+    height: fit-content;
+    bottom: -15px;
 }
 
 .reply-btn {
@@ -112,8 +104,11 @@
 }
 
 @media only screen and (max-width: 1080px) {
+    /* #textInput {
+        margin-top: 20px;
+    } */
     .text-area-btns {
-        position: relative;
+        position: absolute;
         margin-top: 20px;
     }
     .add-post-container {
@@ -137,10 +132,9 @@
         background-color: #E83434;
     }
 
-    .text-area-btns {
-        position: relative;
+    /* #textInput {
         margin-top: 20px;
-    }
+    } */
 
     .col1, .col2 {
         flex-direction: column;
@@ -178,26 +172,13 @@
         margin: auto;
     }
     #add-post {
-        position: relative;
         display: flex;
         flex-direction: column;
-        bottom: 20px;
-        left: 0;
-        margin: auto;
-        transform: scale(0.7);
+        margin-top: 20px;
         transition: 1s ease-in-out;
-    }
-    .btn-group {
-        position: relative;
-        margin-top: 0;
-        background-color: inherit;
     }
     #textInput {
         margin-top: 20px;
-    }
-    .text-area-btns {
-        position: relative;
-        background-color: none;
     }
 }
 

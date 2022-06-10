@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
 .main {
-    font-family: “Finger Paint”, cursive;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
     margin: auto;
     padding: 10px;
     transition: 2s ease-in-out;
-    
 }
 
 section {
@@ -50,6 +48,6 @@ h4 {
     padding: 20px;
 }
 
-li {
+.list-group-item {
     text-align: center;
 }
