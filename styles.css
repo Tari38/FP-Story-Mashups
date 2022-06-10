@@ -23,12 +23,12 @@ html {
     transition: 2s ease-in-out;
 }
 
-/* .flex-container {
+.flex-container {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-} */
+}
 
 .container-left {
     display: flex;
@@ -119,7 +119,7 @@ html {
 
 .submitted-post {
     padding:1em;
-    overflow: auto;
+    overflow: scroll;
     margin-top: 20px;
     height: 550px;
     width: auto;
@@ -129,7 +129,7 @@ html {
     transition: 1s ease-in-out;
 }
 
-.submitted-post > img {
+.submitted-post img {
     border: 6px solid red;
     border-radius: 40%;
     max-height: 200px;

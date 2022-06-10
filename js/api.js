@@ -120,7 +120,19 @@ function renderMsg() {
 
       //console.log(returnCards(data))
       container.innerHTML = returnCards(data);
+      var buttons = document.querySelectorAll(".reply-btn");
+        var i = 0, length = buttons.length;
+        for (i; i < length; i++) {
+            buttons[i].addEventListener("click", function() {
+                //get access to "this" keyword
+                let input = this.nextElementSibling;
+                console.log(input)
+                input.style.visibility = "visible";
+                document.querySelector(".submitComment").style.visibility = "visible";
+             });
+        };
     })
+
 
     .catch((err) => console.log(err));
 }
