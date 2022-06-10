@@ -100,13 +100,12 @@ function renderMsg() {
                             <i data-icon="😮"></i>
                         </label>
 
-                        <form id="form">
-                            <input id="getPost" type="submit" value="get post">
-                                <label for="reply-to-post" class="react">       
-                                    <button type="button" id="reply-to-post" class="reply-btn">Reply ...</button>
-                                    <input class="hide" type="text" id="commentInput" value="..." />
-                                    
-                                </label>   
+                        <form id="submit-comment-form">
+                                <label for="reply-to-post" class="react">
+                                    <button type="button"  class="reply-btn">Reply ...</button>
+                                    <input class="hide commentText" type="text" placeholder="Enter your comment" />
+                                    <input type= "submit" class="submitComment" value="submit">
+                                </label>  
                         </form>
                 </div>
                 </div>
