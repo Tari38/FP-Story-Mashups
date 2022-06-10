@@ -12,22 +12,49 @@
     border: none;
 }
 
+.text-area-btns {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    height: 45px;
+}
+
+.searchGif, #gifSearch {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 45px;
+    margin-top:20px;
+    background-color: #fff;
+    border: 6px solid #E83434;
+    border-radius: 20px 0 0 0;
+    text-align: center;
+    font-family: 'Finger Paint', cursive;
+    color: #0E2B95;
+}
+
+#gifSearch {
+    background-color: transparent;
+    border: none;
+}
+
 #add-gif {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 150px;
     height: 45px;
     font-family: 'Finger Paint', cursive;
     background-color: #C9E265;
     color: #fff;
     border: 6px solid #E83434;
-    border-radius: 0 0 0 20px;
-    margin: auto;
-    margin-top: 15px;
+    border-radius: 0 20px 20px 0;
     text-shadow: 2px 4px #0E2B95;
-    text-align: center;
-    transition: 1s ease-in-out;
+    margin-top: 20px;
 }
 
 .btn-group {
@@ -42,14 +69,6 @@
     margin-left: 0;
 }
 
-.text-area-btns {
-    position: absolute;
-    justify-content: space-between;
-    background-color: inherit;
-    border: none;
-    height: fit-content;
-    bottom: -15px;
-}
 
 .reply-btn {
     position: relative;
@@ -62,45 +81,17 @@
     color: #fff;
     width: fit-content;
     transition: 1s ease-in-out;
+    transform: none;
 }
 
-.searchGif {
-    visibility: visible;
-    position: absolute;
-    z-index: 5;
-    width: 150px;
-    height: 45px;
-    background-color: #fff;
-    border: 6px solid #E83434;
-    text-align: left;
-    font-family: 'Finger Paint', cursive;
-    color: #0E2B95;
-}
-
-#gifSearch {
-    position: absolute;
-    background-color: inherit;
-    border: none;
-    align-self: flex-start;
-}
 
 /* ---- RESPONSIVE MEDIA ---- */
-
-@media only screen and (max-width: 1313px) {
-    .text-area-btns {
-        position: relative;
-        bottom: 0;
-    }
-}
 
 @media only screen and (max-width: 1080px) {
     /* #textInput {
         margin-top: 20px;
     } */
-    .text-area-btns {
-        position: absolute;
-        margin-top: 20px;
-    }
+    
     .add-post-container {
         visibility: visible;
         border: none;
@@ -122,9 +113,9 @@
         background-color: #E83434;
     }
 
-    /* #textInput {
-        margin-top: 20px;
-    } */
+    #textInput {
+        margin-top: 40px;
+    }
 
     .col1, .col2 {
         flex-direction: column;
@@ -149,10 +140,6 @@
     }
     #add-post {
         transform: scale(0.8)
-    }
-    .text-area-btns {
-        position: relative;
-        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 770px) {

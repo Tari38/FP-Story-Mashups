@@ -1,4 +1,6 @@
 figure > img {
+    margin-top: 20px;
+    float: right;
     border: 6px solid red;
     border-radius: 40%;
     max-height: 200px;
