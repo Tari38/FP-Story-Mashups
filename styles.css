@@ -20,7 +20,7 @@ html {
     background-color: #C9E265;
     margin: auto;
     padding: 10px;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .flex-container {
@@ -28,6 +28,7 @@ html {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    margin: auto;
 }
 
 .container-left, .container-right {
@@ -35,15 +36,19 @@ html {
     flex-direction: column;
     background-color: #38B6FF;
     padding: 30px;
-    height: fit-content;
+    height: 100%;
     border: 8px solid #E83434;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .container-right {
     background-color: #FEEF68;
     padding: 30px;
     border: 8px solid #38B6FF;
+}
+
+.container-left > h3 {
+    padding-bottom: 40px;
 }
 
 .font, .font-col2 {
@@ -65,12 +70,12 @@ html {
 }
 
 .col1 {
-    width: 40%;
+    width: 50%;
 }
 .col2 {
     overflow: auto;
     margin-left: 20px;
-    width: 60%;
+    width: 50%;
     transition: 1s ease-in-out;
 }
 
@@ -88,13 +93,13 @@ html {
     min-width: 300px;
     min-height: 300px;
     border: 6px solid #E83434;
-    border-radius: 20px 20px 0px 0;
+    border-radius: 0 20px 20px 20px;
     font-family: 'Finger Paint', cursive;
     font-size: 2rem;
     text-align: left;
     box-shadow: 4px 8px #0E2B95;
     color: #0E2B95;
-    padding: 20px 30px;
+    padding: 30px;
     text-align: left;
 }
 
@@ -129,7 +134,7 @@ html {
     overflow: scroll;
     margin-top: 20px;
     height: 550px;
-    width: fit-content;
+    width: auto;
     border: 6px solid #38B6FF;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
@@ -167,18 +172,6 @@ html {
 
 /* ---- RESPONSIVE MEDIA ---- */
 
-@media only screen and (max-width: 1313px) {
-    #textInput {
-        padding-top: 40px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    #textInput {
-        padding-top: 40px;
-    }
-}
-
 @media only screen and (max-width: 991px) {
 
     /* ---- burger menu styling ---- */
@@ -191,43 +184,25 @@ html {
         background-color: #E83434;
     }
 
-    #textInput {
-        padding-top: 40px;
-    }
-
-    .col1, .col2 {
+    .col1, .col2, .main {
         flex-direction: column;
         width: 100%;
-        margin-left: auto;
-        transition: 1s ease-in-out;
-    }
-    .main {
-        flex-direction: column;
         margin: auto;
         transition: 1s ease-in-out;
     }
 }
 
-@media only screen and (max-width: 970px) {
+/* @media only screen and (max-width: 970px) {
 
     #textInput {
         padding-top: 40px;
     }
-}
+} */
 @media only screen and (max-width: 770px) {
 
     .col1 .col2 {
         width: 100%;
         margin: auto;
-    }
-    #add-post {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        transition: 1s ease-in-out;
-    }
-    #textInput {
-        padding-top: 40px;
     }
 }
 

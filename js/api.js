@@ -1,5 +1,8 @@
 //require('dotenv').config();
 
+// const createPicker = require("picmo");
+// const rootElement = document.querySelector('#pickerContainer');
+// const picker = createPicker({ rootElement });
 const userInput = document.querySelector("#post-input-container");
 
 const userGif = document.querySelector("#add-gif");
@@ -90,7 +93,7 @@ function renderMsg() {
                 <div class="product-header"><p>${valueCards.text}</p>
                 <div class="product-image"><img src="${valueCards.gif}" alt='no gif'></div>
                 </div>
-                <div class="btn-group shadow" role="group">
+                <div id="pickerContainer" class="btn-group shadow" role="group">
                     <input type="checkbox" id="r1" class="btn">
                         <label for="r1" class="react">
                             <i data-icon="🤣"></i>                                
@@ -168,6 +171,11 @@ function addGif(gif) {
 userInput.addEventListener('submit', sendPost);
 
 userGif.addEventListener("click", addGif);
+
+
+// picker.addEventListener('emoji:select', event => {
+//   console.log('Emoji selected:', event.emoji);
+// });
 
 // function onButtonClick (e) {
 //     e.preventDefault();
