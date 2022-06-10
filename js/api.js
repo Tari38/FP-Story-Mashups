@@ -100,13 +100,12 @@ function renderMsg() {
                             <i data-icon="😮"></i>
                         </label>
 
-                        <form id="form">
-                            <input id="getPost" type="submit" value="get post">
-                                <label for="reply-to-post" class="react">       
-                                    <button type="button" id="reply-to-post" class="reply-btn">Reply ...</button>
-                                    <input class="hide" type="text" id="commentInput" value="..." />
-                                    
-                                </label>   
+                        <form id="submit-comment-form">
+                                <label for="reply-to-post" class="react">
+                                    <button type="button"  class="reply-btn">Reply ...</button>
+                                    <input class="hide commentText" type="text" placeholder="Enter your comment" />
+                                    <input type= "submit" class="submitComment" value="submit">
+                                </label>  
                         </form>
                 </div>
                 </div>
@@ -120,7 +119,19 @@ function renderMsg() {
 
       //console.log(returnCards(data))
       container.innerHTML = returnCards(data);
+      var buttons = document.querySelectorAll(".reply-btn");
+        var i = 0, length = buttons.length;
+        for (i; i < length; i++) {
+            buttons[i].addEventListener("click", function() {
+                //get access to "this" keyword
+                let input = this.nextElementSibling;
+                console.log(input)
+                input.style.visibility = "visible";
+                document.querySelector(".submitComment").style.visibility = "visible";
+             });
+        };
     })
+
 
     .catch((err) => console.log(err));
 }
@@ -149,8 +160,8 @@ function addGif(gif) {
   return response.json();
 }
 
-//userMessage.addEventListener('click', getPost);
-//userInput.addEventListener('onClick', sendPost);
+// userMessage.addEventListener('click', getPost);
+// userInput.addEventListener('click', sendPost);
 
 userGif.addEventListener("click", addGif);
 
