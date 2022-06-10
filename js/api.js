@@ -19,10 +19,13 @@ function sendPost(e) {
   const textMessage =
     document.getElementsByClassName("textArea")[0].childNodes[0].textContent;
   console.log(document.getElementsByClassName("textArea")[0].childNodes[0]);
+    
   let giphyImg = "";
   if (document.getElementById("giphyId") !== null) {
     giphyImg = document.getElementById("giphyId").src;
   }
+  
+  
 
   // const textMessage = e.target.textInput.value;
   const randomId = Math.floor(Math.random() * 4000);
@@ -82,7 +85,7 @@ function renderMsg() {
           data
             .map(
               (valueCards) => `
-            <div>
+            <div class="product-card">
                 <div class="product-headerzz">
                 <div class="product-header"><p>${valueCards.text}</p>
                 <div class="product-image"><img src="${valueCards.gif}" alt='no gif'></div>
@@ -100,7 +103,7 @@ function renderMsg() {
                         <label for="r3" class="react"> 
                             <i data-icon="😮"></i>
                         </label>
-
+                        
                         <form id="submit-comment-form">
                                 <label for="reply-to-post" class="react">
                                     <button type="button"  class="reply-btn">Reply ...</button>
@@ -108,7 +111,7 @@ function renderMsg() {
                                     <input type= "submit" class="submitComment" value="submit">
                                 </label>  
                         </form>
-                </div>
+                        </div>
                 </div>
 
             </div>`

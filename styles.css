@@ -30,25 +30,20 @@ html {
     align-content: stretch;
 }
 
-.container-left {
+.container-left, .container-right {
     display: flex;
     flex-direction: column;
     background-color: #38B6FF;
     padding: 30px;
-    height: 100vh;
+    height: fit-content;
     border: 8px solid #E83434;
     transition: 2s ease-in-out;
 }
 
-
 .container-right {
-    display: flex;
-    flex-direction: column;
     background-color: #FEEF68;
     padding: 30px;
-    height: 100vh;
     border: 8px solid #38B6FF;
-    transition: 1s ease-in-out;
 }
 
 .font, .font-col2 {
@@ -86,8 +81,8 @@ html {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("./assets/pencil_bg.webp");
-    background-size:cover;
-    background-position:bottom;
+    background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-position: center;
     min-width: 300px;
@@ -99,42 +94,43 @@ html {
     text-align: left;
     box-shadow: 4px 8px #0E2B95;
     color: #0E2B95;
-    /* transition: 1s ease-in-out; */
-    margin: 20px auto 0;
+    padding: 20px 30px;
     text-align: left;
-    padding: 10px;
 }
 
-
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
 
 .product-header{
     margin-top: 20px;
-    height: fit-content;
+    height: auto;
     width: auto;
     border: 8px solid #C9E265;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
+    align-self: center;
     }
     
 .product-headerzz {
-    margin: 10px;
+    margin: auto;
+    align-items: center;
 }
-/* .blog {
-    padding: 20px;
-    background-color: #E83434;
-    border-radius: 20px;
-    } */
+
 
 .submitted-post {
     padding: 1em;
+    display: block;
     font-family: 'Finger Paint', cursive;
     font-size: 1.2rem;
     overflow: scroll;
     margin-top: 20px;
     height: 550px;
-    width: auto;
-    border: 8px solid #38B6FF;
+    width: fit-content;
+    border: 6px solid #38B6FF;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
@@ -142,58 +138,44 @@ html {
 
 .submitted-post img {
     border: 6px solid red;
-    border-radius: 40%;
+    border-radius: 20%;
     max-height: 200px;
 }
 
 .commentText {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 78px;
+    margin-top: -6px;
+    width:fit-content;
+    border: 6px solid #38B6FF;
+    padding: 10px;
+    border-radius: 20px;
 }
   
-/* ---- character counter ---- */
-
-/* #char-count {
-    display: inline-block;
-    margin: 0;
-    text-shadow: 2px 2px #0E2B95;
-    font-size: 1.5rem;
+.submitComment {
+    position: relative;
+    transform: none;
+    height: 80px;
+    border: 6px solid #38B6FF;
+    background-color: #FEEF68;
+    padding: 10px;
+    margin-top: -6px;
+    border-radius: 20px;
 }
-
-.word-counter p {
-    margin: 0;
-}
-
-.word-counter {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    width: 150px;
-    height: auto;
-    font-family: 'Finger Paint', cursive;
-    background-color: #C9E265;
-    color: #fff;
-    border: 6px solid #E83434;
-    border-radius: 0 0 20px 0px;
-    padding-left: 5px;
-    text-shadow: 2px 2px #0E2B95;
-    /* text-align: left; */
-    /* transition: 1s ease-in-out; */
-/* }  */
-
-
 
 /* ---- RESPONSIVE MEDIA ---- */
 
 @media only screen and (max-width: 1313px) {
     #textInput {
-        margin-top: 20px;
+        padding-top: 40px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
     #textInput {
-        margin-top: 20px;
+        padding-top: 40px;
     }
 }
 
@@ -210,7 +192,7 @@ html {
     }
 
     #textInput {
-        margin-top: 20px;
+        padding-top: 40px;
     }
 
     .col1, .col2 {
@@ -229,7 +211,7 @@ html {
 @media only screen and (max-width: 970px) {
 
     #textInput {
-        margin-top: 20px;
+        padding-top: 40px;
     }
 }
 @media only screen and (max-width: 770px) {
@@ -245,7 +227,7 @@ html {
         transition: 1s ease-in-out;
     }
     #textInput {
-        margin-top: 20px;
+        padding-top: 40px;
     }
 }
 
