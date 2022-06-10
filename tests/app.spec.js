@@ -30,9 +30,20 @@ describe('app', () => {
         const event = { preventDefault: () => {} };
         test('Prevent default works on submit', () => {
             const form = document.querySelector('form')
-            const success = form.handleDelete(event);
-            expect(event.preventDefault).toBeCalled();
-            expect(success).toBeTruthy();
+            const fun = (e) => {
+                e.preventDefault();
+            }
+            const success = form.addEventListener('submit', fun)
+            expect(event.preventDefault).toBeTruthy();
         });
     });
+
+    describe('gets an element by Id', () => {
+        test('should get element by id', () => {
+            let element = document.getElementById('form')
+            expect(element).toBeTruthy()
+        });
+
+    });
+
 })
