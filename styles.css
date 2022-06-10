@@ -109,16 +109,27 @@ html {
 
 .product-header{
     margin-top: 20px;
-    height: 200px;
+    height: fit-content;
     width: auto;
     border: 8px solid #C9E265;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     transition: 1s ease-in-out;
     }
+    
+.product-headerzz {
+    margin: 10px;
+}
+/* .blog {
+    padding: 20px;
+    background-color: #E83434;
+    border-radius: 20px;
+    } */
 
 .submitted-post {
-    padding:1em;
+    padding: 1em;
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.2rem;
     overflow: scroll;
     margin-top: 20px;
     height: 550px;
@@ -135,6 +146,9 @@ html {
     max-height: 200px;
 }
 
+.commentText {
+
+}
   
 /* ---- character counter ---- */
 
